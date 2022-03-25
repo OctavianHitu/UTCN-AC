@@ -1,0 +1,36 @@
+assign(max_seconds, 30).
+set(binary_resolution).
+
+%eu ies in oras.
+%daca ies in oras cu masina conduc
+%daca ies fara masina ma ia un prieten
+%daca ma ia prietenul mergem la petrecere sau ma duce la iubita mea
+%daca mergem la petrecere prietenul consuma un pahar deci voi conduce de la petrecere
+%daca nu merge la petrecere ies cu iubita mea
+%iubita mea are masina , dar nu are permis deci conduc
+% sa se demonstrzez ca eu conduc daca ies in oras
+
+
+formulas(assumptions).
+
+ eu.
+ prieten_consuma_un_pahar.
+ are_masina.
+ 
+ 
+ eu -> ies_in_oras.
+ ies_in_oras -> fara_masina | cu_masina.
+ cu_masina -> conduc.
+ fara_masina -> ma_ia_prieten.
+ ma_ia_prieten -> petrecere | ies_cu_iubita.
+ petrecere & prieten_consuma_un_pahar ->conduc.
+ ies_cu_iubita -> nu_are_permis.
+ nu_are_permis & are_masina -> conduc.
+
+end_of_list.
+
+
+formulas(goals).
+
+conduc.
+end_of_list.

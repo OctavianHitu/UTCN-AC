@@ -1,0 +1,175 @@
+============================== Prover9 ===============================
+Prover9 (64) version 2017-11A (CIIRC), November 2017.
+Process 6053 was started by octavian on octavian-VirtualBox,
+Thu Dec  2 18:32:00 2021
+The command was "prover9 -f grupas.in".
+============================== end of head ===========================
+
+============================== INPUT =================================
+
+% Reading from file grupas.in
+
+assign(max_seconds,30).
+set(binary_resolution).
+
+formulas(assumptions).
+M.
+M -> V.
+V -> T.
+T -> B.
+end_of_list.
+
+formulas(goals).
+B.
+end_of_list.
+
+============================== end of input ==========================
+
+============================== PROCESS NON-CLAUSAL FORMULAS ==========
+
+% Formulas that are not ordinary clauses:
+1 M -> V # label(non_clause).  [assumption].
+2 V -> T # label(non_clause).  [assumption].
+3 T -> B # label(non_clause).  [assumption].
+4 B # label(non_clause) # label(goal).  [goal].
+
+============================== end of process non-clausal formulas ===
+
+============================== PROCESS INITIAL CLAUSES ===============
+
+% Clauses before input processing:
+
+formulas(usable).
+end_of_list.
+
+formulas(sos).
+M.  [assumption].
+-M | V.  [clausify(1)].
+-V | T.  [clausify(2)].
+-T | B.  [clausify(3)].
+-B.  [deny(4)].
+end_of_list.
+
+formulas(demodulators).
+end_of_list.
+
+============================== PREDICATE ELIMINATION =================
+
+No predicates eliminated.
+
+============================== end predicate elimination =============
+
+Auto_denials:  (no changes).
+
+Term ordering decisions:
+Predicate symbol precedence:  predicate_order([ M, T, V, B ]).
+Function symbol precedence:  function_order([ ]).
+After inverse_order:  (no changes).
+Unfolding symbols: (none).
+
+Auto_inference settings:
+  % set(neg_binary_resolution).  % (HNE depth_diff=0)
+  % clear(ordered_res).  % (HNE depth_diff=0)
+  % set(ur_resolution).  % (HNE depth_diff=0)
+    % set(ur_resolution) -> set(pos_ur_resolution).
+    % set(ur_resolution) -> set(neg_ur_resolution).
+
+Auto_process settings:  (no changes).
+
+kept:      5 M.  [assumption].
+kept:      6 -M | V.  [clausify(1)].
+kept:      7 -V | T.  [clausify(2)].
+kept:      8 -T | B.  [clausify(3)].
+kept:      9 -B.  [deny(4)].
+
+============================== end of process initial clauses ========
+
+============================== CLAUSES FOR SEARCH ====================
+
+% Clauses after input processing:
+
+formulas(usable).
+end_of_list.
+
+formulas(sos).
+5 M.  [assumption].
+6 -M | V.  [clausify(1)].
+7 -V | T.  [clausify(2)].
+8 -T | B.  [clausify(3)].
+9 -B.  [deny(4)].
+end_of_list.
+
+formulas(demodulators).
+end_of_list.
+
+============================== end of clauses for search =============
+
+============================== SEARCH ================================
+
+% Starting search at 0.00 seconds.
+
+given #1 (I,wt=1): 5 M.  [assumption].
+
+given #2 (I,wt=2): 6 -M | V.  [clausify(1)].
+
+given #3 (I,wt=2): 7 -V | T.  [clausify(2)].
+
+given #4 (I,wt=2): 8 -T | B.  [clausify(3)].
+
+given #5 (I,wt=1): 9 -B.  [deny(4)].
+
+given #6 (A,wt=1): 10 V.  [resolve(6,a,5,a)].
+-------- Proof 1 -------- 
+
+============================== PROOF =================================
+
+% Proof 1 at 0.00 (+ 0.00) seconds.
+% Length of proof is 13.
+% Level of proof is 4.
+% Maximum clause weight is 2.000.
+% Given clauses 6 (1.500 givens/level).
+
+1 M -> V # label(non_clause).  [assumption].
+2 V -> T # label(non_clause).  [assumption].
+3 T -> B # label(non_clause).  [assumption].
+4 B # label(non_clause) # label(goal).  [goal].
+5 M.  [assumption].
+6 -M | V.  [clausify(1)].
+7 -V | T.  [clausify(2)].
+8 -T | B.  [clausify(3)].
+9 -B.  [deny(4)].
+10 V.  [resolve(6,a,5,a)].
+11 -T.  [resolve(9,a,8,b)].
+12 T.  [resolve(10,a,7,a)].
+13 $F.  [resolve(12,a,11,a)].
+
+============================== end of proof ==========================
+
+============================== STATISTICS ============================
+
+Given=6. Generated=10. Kept=8. proofs=1.
+Usable=4. Sos=1. Demods=0. Limbo=0, Disabled=7. Hints=0.
+Kept_by_rule=0, Deleted_by_rule=0.
+Forward_subsumed=2. Back_subsumed=2.
+Sos_limit_deleted=0. Sos_displaced=0. Sos_removed=0.
+New_demodulators=0 (0 lex), Back_demodulated=0. Back_unit_deleted=0.
+Demod_attempts=0. Demod_rewrites=0.
+Res_instance_prunes=0. Para_instance_prunes=0. Basic_paramod_prunes=0.
+Nonunit_fsub_feature_tests=0. Nonunit_bsub_feature_tests=5.
+Megabytes=0.03.
+User_CPU=0.00, System_CPU=0.00, Wall_clock=0.
+
+============================== end of statistics =====================
+
+============================== end of search =========================
+
+THEOREM PROVED
+
+THEOREM PROVED
+
+Exiting with 1 proof.
+
+------ process 6053 exit (max_proofs) ------
+
+Process 6053 exit (max_proofs) Thu Dec  2 18:32:00 2021
+

@@ -1,0 +1,23 @@
+
+
+assign(max_seconds, 30).
+set(binary_resolution).
+
+%exista masini deci trebuie sa bagi bani in ele daca se invechesc
+%masina se invecheste
+%masina trebuie dusa la tinichigiu
+%tinichigiul cere bani
+
+
+formulas(assumptions).
+M.
+M -> V.
+V -> T.
+T -> B.
+
+
+end_of_list.
+
+formulas(goals).
+B.
+end_of_list.

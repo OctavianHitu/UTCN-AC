@@ -1,0 +1,15 @@
+Problema dezvoltata descrie o situatie des intalnita in mai multe cazuri. In cazul nostru este vorba de capitanul unui bac(un vas ce transporta vehicule si persoane de-a latul raurilor). Acesta este nevoit sa tranporte cat mai eficient un numar de mai multe autovehicule diferite, in cazul nostru trei autovehicule(autoturism, autotren si motor). Dificultatea acestei probleme consta in faptul ca exista o greutate maxima pe care bacul o poate suporta ceea ce il face pe capitan sa nu poata transporta decat un autotren singur sau cel mult un autovehicul si o motocicla in acelasi timp.
+
+Pentru rezolvarea acestei probleme, am folosit mai multe functii ajutatoare:
+
+1. Functia state() reprezinta o functie de stare ce are 4 parametrii :
+-Side - reprezinta partea pe care se afla bacul;
+-M,T,R - reprezinta valori booleene pentru cele trei tipuri de autovehicule(M-automobil, T-autotren, R-motor);
+
+2. Functia flip() reprezinta o functie ce are ca parametru o valoare booleana si are ca scop negarea acesteia.
+
+3. Functia otherside() reprezinta o functie care inverseaza variabilele de side intre ele, adica daca noi Side-ul nostru este destinatie acesta se va transforma in plecare si invers.
+
+4. Functia ok() reprezinta o functie care are ca parametrii cele trei valori booleene M,T,R , aceasta impune conditia ca pe bac sa nu se afle vehicule ce depasesc greutatea maxima admisa.
+
+

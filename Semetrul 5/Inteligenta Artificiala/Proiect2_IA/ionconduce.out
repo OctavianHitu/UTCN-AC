@@ -1,0 +1,183 @@
+============================== Prover9 ===============================
+Prover9 (64) version 2017-11A (CIIRC), November 2017.
+Process 5997 was started by octavian on octavian-VirtualBox,
+Thu Dec  2 18:29:12 2021
+The command was "prover9 -f ionconduce.in".
+============================== end of head ===========================
+
+============================== INPUT =================================
+
+% Reading from file ionconduce.in
+
+assign(max_seconds,30).
+set(binary_resolution).
+
+formulas(assumptions).
+ion.
+politie.
+martori.
+ion -> distr.
+distr -> beat.
+beat -> conduce.
+conduce -> iviteza | iacc | icpr.
+iacc -> papermis.
+icpr & martori -> papermis.
+iviteza & politie -> papermis.
+end_of_list.
+
+formulas(goals).
+papermis.
+end_of_list.
+
+============================== end of input ==========================
+
+============================== PROCESS NON-CLAUSAL FORMULAS ==========
+
+% Formulas that are not ordinary clauses:
+1 ion -> distr # label(non_clause).  [assumption].
+2 distr -> beat # label(non_clause).  [assumption].
+3 beat -> conduce # label(non_clause).  [assumption].
+4 conduce -> iviteza | iacc | icpr # label(non_clause).  [assumption].
+5 iacc -> papermis # label(non_clause).  [assumption].
+6 icpr & martori -> papermis # label(non_clause).  [assumption].
+7 iviteza & politie -> papermis # label(non_clause).  [assumption].
+8 papermis # label(non_clause) # label(goal).  [goal].
+
+============================== end of process non-clausal formulas ===
+
+============================== PROCESS INITIAL CLAUSES ===============
+
+% Clauses before input processing:
+
+formulas(usable).
+end_of_list.
+
+formulas(sos).
+ion.  [assumption].
+politie.  [assumption].
+martori.  [assumption].
+-ion | distr.  [clausify(1)].
+-distr | beat.  [clausify(2)].
+-beat | conduce.  [clausify(3)].
+-conduce | iviteza | iacc | icpr.  [clausify(4)].
+-iacc | papermis.  [clausify(5)].
+-icpr | -martori | papermis.  [clausify(6)].
+-iviteza | -politie | papermis.  [clausify(7)].
+-papermis.  [deny(8)].
+end_of_list.
+
+formulas(demodulators).
+end_of_list.
+
+============================== PREDICATE ELIMINATION =================
+
+No predicates eliminated.
+
+============================== end predicate elimination =============
+
+Auto_denials:  (non-Horn, no changes).
+
+Term ordering decisions:
+Predicate symbol precedence:  predicate_order([ papermis, beat, conduce, distr, iacc, icpr, ion, iviteza, martori, politie ]).
+Function symbol precedence:  function_order([ ]).
+After inverse_order:  (no changes).
+Unfolding symbols: (none).
+
+Auto_inference settings:
+  % set(binary_resolution).  % (non-Horn)
+  % set(neg_ur_resolution).  % (non-Horn, less than 100 clauses)
+
+Auto_process settings:
+  % set(factor).  % (non-Horn)
+  % set(unit_deletion).  % (non-Horn)
+
+kept:      9 ion.  [assumption].
+kept:      10 politie.  [assumption].
+kept:      11 martori.  [assumption].
+           12 -ion | distr.  [clausify(1)].
+kept:      13 distr.  [copy(12),unit_del(a,9)].
+           14 -distr | beat.  [clausify(2)].
+kept:      15 beat.  [copy(14),unit_del(a,13)].
+           16 -beat | conduce.  [clausify(3)].
+kept:      17 conduce.  [copy(16),unit_del(a,15)].
+           18 -conduce | iviteza | iacc | icpr.  [clausify(4)].
+kept:      19 iviteza | iacc | icpr.  [copy(18),unit_del(a,17)].
+kept:      20 -iacc | papermis.  [clausify(5)].
+           21 -icpr | -martori | papermis.  [clausify(6)].
+kept:      22 -icpr | papermis.  [copy(21),unit_del(b,11)].
+           23 -iviteza | -politie | papermis.  [clausify(7)].
+kept:      24 -iviteza | papermis.  [copy(23),unit_del(b,10)].
+kept:      25 -papermis.  [deny(8)].
+kept:      26 -iviteza.  [back_unit_del(24),unit_del(b,25)].
+kept:      27 -icpr.  [back_unit_del(22),unit_del(b,25)].
+kept:      28 -iacc.  [back_unit_del(20),unit_del(b,25)].
+-------- Proof 1 -------- 
+
+============================== PROOF =================================
+
+% Proof 1 at 0.00 (+ 0.00) seconds.
+% Length of proof is 29.
+% Level of proof is 6.
+% Maximum clause weight is 3.000.
+% Given clauses 0 (0.000 givens/level).
+
+1 ion -> distr # label(non_clause).  [assumption].
+2 distr -> beat # label(non_clause).  [assumption].
+3 beat -> conduce # label(non_clause).  [assumption].
+4 conduce -> iviteza | iacc | icpr # label(non_clause).  [assumption].
+5 iacc -> papermis # label(non_clause).  [assumption].
+6 icpr & martori -> papermis # label(non_clause).  [assumption].
+7 iviteza & politie -> papermis # label(non_clause).  [assumption].
+8 papermis # label(non_clause) # label(goal).  [goal].
+9 ion.  [assumption].
+10 politie.  [assumption].
+11 martori.  [assumption].
+12 -ion | distr.  [clausify(1)].
+13 distr.  [copy(12),unit_del(a,9)].
+14 -distr | beat.  [clausify(2)].
+15 beat.  [copy(14),unit_del(a,13)].
+16 -beat | conduce.  [clausify(3)].
+17 conduce.  [copy(16),unit_del(a,15)].
+18 -conduce | iviteza | iacc | icpr.  [clausify(4)].
+19 iviteza | iacc | icpr.  [copy(18),unit_del(a,17)].
+20 -iacc | papermis.  [clausify(5)].
+21 -icpr | -martori | papermis.  [clausify(6)].
+22 -icpr | papermis.  [copy(21),unit_del(b,11)].
+23 -iviteza | -politie | papermis.  [clausify(7)].
+24 -iviteza | papermis.  [copy(23),unit_del(b,10)].
+25 -papermis.  [deny(8)].
+26 -iviteza.  [back_unit_del(24),unit_del(b,25)].
+27 -icpr.  [back_unit_del(22),unit_del(b,25)].
+28 -iacc.  [back_unit_del(20),unit_del(b,25)].
+29 $F.  [back_unit_del(19),unit_del(a,26),unit_del(b,28),unit_del(c,27)].
+
+============================== end of proof ==========================
+
+============================== STATISTICS ============================
+
+Given=0. Generated=15. Kept=14. proofs=1.
+Usable=0. Sos=7. Demods=0. Limbo=3, Disabled=15. Hints=0.
+Kept_by_rule=0, Deleted_by_rule=0.
+Forward_subsumed=0. Back_subsumed=0.
+Sos_limit_deleted=0. Sos_displaced=0. Sos_removed=0.
+New_demodulators=0 (0 lex), Back_demodulated=0. Back_unit_deleted=4.
+Demod_attempts=0. Demod_rewrites=0.
+Res_instance_prunes=0. Para_instance_prunes=0. Basic_paramod_prunes=0.
+Nonunit_fsub_feature_tests=0. Nonunit_bsub_feature_tests=4.
+Megabytes=0.04.
+User_CPU=0.00, System_CPU=0.00, Wall_clock=0.
+
+============================== end of statistics =====================
+
+============================== end of search =========================
+
+THEOREM PROVED
+
+THEOREM PROVED
+
+Exiting with 1 proof.
+
+------ process 5997 exit (max_proofs) ------
+
+Process 5997 exit (max_proofs) Thu Dec  2 18:29:12 2021
+

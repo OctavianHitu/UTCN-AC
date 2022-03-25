@@ -1,0 +1,34 @@
+assign(max_seconds, 30).
+set(binary_resolution).
+
+%ion merge la petrecere sa se distreze
+%ion la petrece bea alcool
+%ion dupa petrecere se urca la volan
+%la volan poate sa mearga cu viteza, sa faca accident, sau sa conduca prost
+%daca face accident i se ia permisul
+%daca conduce prost si are martori i se ia permisul
+% daca merge cu viteza si il prinde politia ii ia permisul
+
+
+formulas(assumptions).
+
+ ion.
+ politie.
+ martori.
+ 
+ ion -> distr.
+ distr ->beat.
+ beat -> conduce.
+ conduce -> iviteza | iacc | icpr.
+ iacc ->papermis.
+ icpr & martori -> papermis.
+ iviteza & politie -> papermis.
+
+end_of_list.
+
+
+formulas(goals).
+
+papermis.
+
+end_of_list.

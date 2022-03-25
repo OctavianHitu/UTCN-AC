@@ -1,0 +1,47 @@
+set(production).
+set(prolog_style_variables).
+
+formulas(usable).
+
+%Un capitan doreste sa transporte cu bac-ul dintr-un capat in altul al raului
+%trei autovehicule, un autoturism, o motocicleta si un autotren. Totusi, acesta
+%are o greutate maxima prea mica, fapt care il face pe acesta sa fie nevoit sa 
+%transporte cele trei autovehicule in 2 curse. Acesta stie ca bac-ul nu poate transporta
+%greutatea unui autotren si a unui atoturism in acelasi timp si mai stie ca nu poate sa transporte
+%greutatea unui autotren si a unei motociclete in acelasi timp.
+%
+%Pentru aceasta problema vom avea o stare(Side, M, T, R),
+%Side inseamna partea in care se afla bac-ul, daca e la plecare sau la destinatie
+%M, T si R sunt reprezentantele pentru autoturism, autotren si motocicleta, acestea au valori
+%booleene.
+
+state(Side, M,T,R) & ok(M,T,R) -> state(otherside(Side), flip(M),flip(T),flip(R)) # answer(none).
+state(Side, 1,T,R) & ok(0,T,R) -> state(otherside(Side), 1,flip(T),flip(R)) # answer(autovehicul).
+state(Side, M,1,R) & ok(M,0,R) -> state(otherside(Side), flip(M),1,flip(R)) # answer(autotren).
+state(Side, M,T,1) & ok(M,T,0) -> state(otherside(Side), flip(M),flip(T),1) # answer(motor).
+
+end_of_list.
+
+formulas(assumptions).
+state(plecare, 1,1,1).  % starea initiala
+end_of_list.
+
+formulas(goals).
+state(destinatie, 1,1,1).  % starea finala
+end_of_list.
+
+formulas(demodulators).
+
+% functie ce ne ajuta sa schimbam valorile booleene
+flip(0) = 1.
+flip(1) = 0.
+
+% functie ce interschimba valoarea lui Side
+otherside(plecare) = destinatie.
+otherside(destinatie) = plecare.
+
+% functie de ok care foloseste 2 conditii intr-un if
+ok(M,T,R) <-> if((M==1 & T==1) | (T==1 & R==1), $F, $T).
+                 
+end_of_list.
+
