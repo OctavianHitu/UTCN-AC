@@ -49,18 +49,7 @@
       </li>
     </ul>
      
-         <li>:open_file_folder: Semester 6
-     <ul>
-      <li>
-        <a href=" https://github.com/OctavianHitu/UTCN-AC/tree/main/Semestrul%206">
-         📘 Databases
-        </a>
-      </li>
-       </ul>
-           
-           
-      </ul>
-     
+        
    
     
 
