@@ -32,6 +32,11 @@
         📓 Structure of computer systems
         </a>
       </li>
+            <li>
+        <a href="https://github.com/OctavianHitu/UTCN-AC/tree/main/Semetrul%205/Prelucrare%20Grafica">
+        📓 Graphic processing
+        </a>
+      </li>
     </ul>
 
 ## The site of the UTCN is [here](https://ac.utcluj.ro/acasa.html).
