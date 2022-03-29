@@ -48,6 +48,14 @@
         </a>
       </li>
     </ul>
+       <li>:open_file_folder: Semester 3
+     <ul>
+      <li>
+        <a href="https://github.com/OctavianHitu/UTCN-AC/tree/main/Semestrul%203">
+         📘 Databases
+        </a>
+      </li>
+       </ul>
      
         
    
