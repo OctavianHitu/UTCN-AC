@@ -9,6 +9,14 @@
         </a>
       </li>
        </ul>
+     
+     <ul>
+      <li>
+        <a href="https://github.com/OctavianHitu/UTCN-AC/tree/main/Semestrul%203">
+         📘 Fundamental Algorithms
+        </a>
+      </li>
+       </ul>
  
   
   <li>:open_file_folder: Semester 4
