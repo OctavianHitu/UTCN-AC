@@ -60,10 +60,15 @@
          📘 Image Processing
         </a>
       </li>
+       <li>
+        <a href="https://github.com/OctavianHitu/UTCN-AC/tree/main/Semestrul%206/Proiectare%20Software">
+         📘 Software Design
+        </a>
+      </li>
        </ul>
      
         
    
-    
+   
 
 ## The site of the UTCN is [here](https://ac.utcluj.ro/acasa.html).
