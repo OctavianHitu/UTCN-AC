@@ -8,11 +8,8 @@
          📘 Databases
         </a>
       </li>
-       </ul>
-     
-     <ul>
       <li>
-        <a href="https://github.com/OctavianHitu/UTCN-AC/tree/main/Semestrul%203">
+        <a href="https://github.com/OctavianHitu/UTCN-AC/tree/main/Semestrul%203/Algoritmi%20Fundamentali">
          📘 Fundamental Algorithms
         </a>
       </li>
