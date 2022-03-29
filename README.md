@@ -7,7 +7,8 @@
         <a href="https://github.com/OctavianHitu/UTCN-AC/tree/main/Semestrul%203">
          📘 Databases
         </a>
-      </li>    
+      </li>
+       </ul>
  
   
   <li>:open_file_folder: Semester 4
