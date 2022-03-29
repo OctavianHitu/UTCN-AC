@@ -56,7 +56,7 @@
        <li>:open_file_folder: Semester 6
      <ul>
       <li>
-        <a href="https://github.com/OctavianHitu/UTCN-AC/tree/main/Semestrul%206">
+        <a href="https://github.com/OctavianHitu/UTCN-AC/tree/main/Semestrul%206/Procesare%20de%20imagine">
          📘 Image Processing
         </a>
       </li>
