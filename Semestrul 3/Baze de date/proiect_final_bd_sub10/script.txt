@@ -1,0 +1,187 @@
+CREATE TABLE Zboruri( 
+	nrz DOUBLE ,
+	de_la VARCHAR(20),
+	la VARCHAR(20),
+	distanta DOUBLE,
+	plecare DATE,
+	sosire DATE);
+
+
+
+CREATE TABLE Aeronave(
+	idav DOUBLE,
+	numeav VARCHAR(100),
+	gama_croaziera DOUBLE);
+
+
+
+CREATE TABLE Certificare(
+	idan DOUBLE,
+	idav DOUBLE);
+
+
+
+
+CREATE TABLE Angajati(
+	idan DOUBLE,
+	numean VARCHAR(100),
+	functie VARCHAR(50),
+	salariu DOUBLE
+);	
+
+
+ALTER TABLE Zboruri
+ADD CONSTRAINT pk_Zboruri PRIMARY KEY (nrz);
+
+ALTER TABLE Aeronave
+ADD CONSTRAINT pk_Aeronave PRIMARY KEY (idav);
+
+
+ALTER TABLE Certificare
+ADD CONSTRAINT pk_Certificare PRIMARY KEY (idan,idav);
+
+ALTER TABLE Angajati
+ADD CONSTRAINT pk_Angajati PRIMARY KEY (idan);
+
+ALTER TABLE Certificare
+ADD CONSTRAINT fk_Certificare_idav
+FOREIGN KEY (idav)
+REFERENCES Aeronave(idav);
+
+ALTER TABLE Certificare
+ADD CONSTRAINT fk_Certificare_idan
+FOREIGN KEY (idan)
+REFERENCES Angajati(idan);
+
+
+
+
+
+
+ALTER TABLE zboruri
+ADD zi VARCHAR(3);
+
+
+INSERT INTO Zboruri(nrz,de_la,la,distanta,plecare,sosire,zi)
+VALUES
+(1,'Munchen','Madrid',1500,CURDATE()+1,CURDATE()+3/24+1,'Ma');
+
+INSERT INTO Zboruri(nrz,de_la,la,distanta,plecare,sosire,zi)
+VALUES
+(2,'Iasi','Suceava',150,CURDATE()+2,CURDATE()+1/24+2,'Mi');
+
+
+INSERT INTO Zboruri(nrz,de_la,la,distanta,plecare,sosire,zi)
+VALUES
+(3,'Sofia','Cluj',1200,CURDATE()+3,CURDATE()+1/24+3,'Jo');
+
+
+INSERT INTO Zboruri(nrz,de_la,la,distanta,plecare,sosire,zi)
+VALUES
+(4,'Atena','Bucuresti',950,CURDATE()+4,CURDATE()+1/24+4,'Vi');
+
+
+
+
+INSERT INTO Aeronave
+(idav,numeav,gama_croaziera)
+VALUES
+(1,'BOEING 737-800',5420);
+
+
+INSERT INTO Aeronave
+(idav,numeav,gama_croaziera)
+VALUES
+(2,'BOEING 737-700',6000);
+
+
+INSERT INTO Aeronave
+(idav,numeav,gama_croaziera)
+VALUES
+(3,'BOEING 737-600',4600);
+
+INSERT INTO Aeronave
+(idav,numeav,gama_croaziera)
+VALUES
+(4,'AIRBUS 328-111',5500);
+
+INSERT INTO Aeronave
+(idav,numeav,gama_croaziera)
+VALUES
+(5,'ATR 42-5',4750);
+
+
+
+INSERT INTO Certificare
+(idan,idav)
+VALUES
+(1,2);
+
+INSERT INTO Certificare
+(idan,idav)
+VALUES
+(1,1);
+
+INSERT INTO Certificare
+(idan,idav)
+VALUES
+(1,3);
+
+INSERT INTO Certificare
+(idan,idav)
+VALUES
+(2,2);
+
+INSERT INTO Certificare
+(idan,idav)
+VALUES
+(2,4);
+
+
+INSERT INTO Certificare
+(idan,idav)
+VALUES
+(3,5);
+
+
+INSERT INTO Certificare
+(idan,idav)
+VALUES
+(3,2);
+
+
+INSERT INTO Certificare
+(idan,idav)
+VALUES
+(3,3);
+
+
+
+INSERT INTO Angajati
+(idan,numean,functie,salariu)
+VALUES
+(1,'George Iulian','pilot',5500);
+
+
+INSERT INTO Angajati
+(idan,numean,functie,salariu)
+VALUES
+(2,'Ioan Alexandru','pilot',6500);
+
+
+INSERT INTO Angajati
+(idan,numean,functie,salariu)
+VALUES
+(3,'Andrei bogdan','pilot',8500);
+
+
+INSERT INTO Angajati
+(idan,numean,functie,salariu)
+VALUES
+(4,'Rares Gica','casier',2500);
+
+INSERT INTO Angajati
+(idan,numean,functie,salariu)
+VALUES
+(5,'Mircea Ionescu','director',12500);
+
