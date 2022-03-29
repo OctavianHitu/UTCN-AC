@@ -34,22 +34,22 @@
     <ul>
        <li>
         <a href="https://github.com/OctavianHitu/UTCN-AC/tree/main/Semetrul%205/Inteligenta%20Artificiala">
-        📓 Artificial intelligence
+        📘 Artificial intelligence
         </a>
       </li>
        <li>
         <a href="https://github.com/OctavianHitu/UTCN-AC/tree/main/Semetrul%205/Proiectare%20cu%20Microprocesoare/ProiectMasinaPMP">
-        📓 Design with microprocessors
+        📘 Design with microprocessors
         </a>
       </li>
       <li>
         <a href="https://github.com/OctavianHitu/UTCN-AC/tree/main/Semetrul%205/Structura%20Sistemelor%20de%20Calcul">
-        📓 Structure of computer systems
+       📘 Structure of computer systems
         </a>
       </li>
             <li>
         <a href="https://github.com/OctavianHitu/UTCN-AC/tree/main/Semetrul%205/Prelucrare%20Grafica">
-        📓 Graphic processing
+       📘 Graphic processing
         </a>
       </li>
     </ul>
