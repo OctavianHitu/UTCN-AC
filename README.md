@@ -4,7 +4,7 @@
    <li>:open_file_folder: Semester 3
      <ul>
       <li>
-        <a href="https://github.com/OctavianHitu/UTCN-AC/tree/main/Semestrul%203">
+        <a href="https://github.com/OctavianHitu/UTCN-AC/tree/main/Semestrul%203/Baze%20de%20date">
          📘 Databases
         </a>
       </li>
