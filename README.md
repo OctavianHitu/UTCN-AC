@@ -10,7 +10,7 @@
         </a>
       </li>
        </ul>
-<ul>
+
   
    <li>:open_file_folder: Semester 3
      <ul>
