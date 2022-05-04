@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<incaltamintes>
+                    
+
+
+    
+    
+    
+            
+    
+    
+    
+    
+    <incaltaminte>
+                                        
+        
+        
+        
+        <numemagazin>Tike</numemagazin>
+                                        
+        
+        
+        
+        <nume>J1</nume>
+                                        
+        
+        
+        
+        <producator>nike</producator>
+                                        
+        
+        
+        
+        <pret>600</pret>
+                                        
+        
+        
+        
+        <numarexemplareinitiale>45</numarexemplareinitiale>
+                                        
+        
+        
+        
+        <numarexemplarevandute>12</numarexemplarevandute>
+                                        
+        
+        
+        
+        <marime>36</marime>
+                                    
+    
+    
+    
+    </incaltaminte>
+                    
+    
+    
+    
+            
+    
+    
+    
+    
+    <incaltaminte>
+                                        
+        
+        
+        
+        <numemagazin>Tike</numemagazin>
+                                        
+        
+        
+        
+        <nume>af1</nume>
+                                        
+        
+        
+        
+        <producator>nike</producator>
+                                        
+        
+        
+        
+        <pret>500</pret>
+                                        
+        
+        
+        
+        <numarexemplareinitiale>70</numarexemplareinitiale>
+                                        
+        
+        
+        
+        <numarexemplarevandute>70</numarexemplarevandute>
+                                        
+        
+        
+        
+        <marime>44</marime>
+                                    
+    
+    
+    
+    </incaltaminte>
+                    
+    
+    
+    
+            
+    
+    
+    
+    
+    <incaltaminte>
+                                        
+        
+        
+        
+        <numemagazin>Buzz</numemagazin>
+                                        
+        
+        
+        
+        <nume>superstar</nume>
+                                        
+        
+        
+        
+        <producator>Adidas</producator>
+                                        
+        
+        
+        
+        <pret>400</pret>
+                                        
+        
+        
+        
+        <numarexemplareinitiale>89</numarexemplareinitiale>
+                                        
+        
+        
+        
+        <numarexemplarevandute>56</numarexemplarevandute>
+                                        
+        
+        
+        
+        <marime>45</marime>
+                                    
+    
+    
+    
+    </incaltaminte>
+                    
+    
+    
+    
+        
+
+    
+    
+    <incaltaminte>
+                        
+        
+        <numemagazin>Buzz</numemagazin>
+                        
+        
+        <nume>af1Nike30041200320</nume>
+                        
+        
+        <producator/>
+                        
+        
+        <pret/>
+                        
+        
+        <marime/>
+                        
+        
+        <exinitiale/>
+                        
+        
+        <exvandute/>
+                        
+        
+        <nume>af1Nike30042200120</nume>
+                        
+        
+        <producator/>
+                        
+        
+        <pret/>
+                        
+        
+        <marime/>
+                        
+        
+        <exinitiale/>
+                        
+        
+        <exvandute/>
+                        
+        
+        <nume>af1Nike30043200120</nume>
+                        
+        
+        <producator/>
+                        
+        
+        <pret/>
+                        
+        
+        <marime/>
+                        
+        
+        <exinitiale/>
+                        
+        
+        <exvandute/>
+                        
+        
+        <nume>af1nike30044300100</nume>
+                        
+        
+        <producator/>
+                        
+        
+        <pret/>
+                        
+        
+        <marime/>
+                        
+        
+        <exinitiale/>
+                        
+        
+        <exvandute/>
+                    
+    
+    </incaltaminte>
+            
+    
+    
+    <incaltaminte>
+                        
+        
+        <numemagazin>Tike</numemagazin>
+                        
+        
+        <nume>yeezyAdidas90043134130</nume>
+                        
+        
+        <producator/>
+                        
+        
+        <pret/>
+                        
+        
+        <marime/>
+                        
+        
+        <exinitiale/>
+                        
+        
+        <exvandute/>
+                        
+        
+        <nume>yeezyAdidas90044120110</nume>
+                        
+        
+        <producator/>
+                        
+        
+        <pret/>
+                        
+        
+        <marime/>
+                        
+        
+        <exinitiale/>
+                        
+        
+        <exvandute/>
+                        
+        
+        <nume>yeezyAdidas90045105100</nume>
+                        
+        
+        <producator/>
+                        
+        
+        <pret/>
+                        
+        
+        <marime/>
+                        
+        
+        <exinitiale/>
+                        
+        
+        <exvandute/>
+                    
+    
+    </incaltaminte>
+        
+
+    <incaltaminte>
+        <numemagazin>Buzz</numemagazin>
+        <nume>af1Nike30041200320</nume>
+        <producator/>
+        <pret/>
+        <marime/>
+        <exinitiale/>
+        <exvandute/>
+        <nume>af1Nike30042200120</nume>
+        <producator/>
+        <pret/>
+        <marime/>
+        <exinitiale/>
+        <exvandute/>
+        <nume>af1Nike30043200120</nume>
+        <producator/>
+        <pret/>
+        <marime/>
+        <exinitiale/>
+        <exvandute/>
+        <nume>af1nike30044300100</nume>
+        <producator/>
+        <pret/>
+        <marime/>
+        <exinitiale/>
+        <exvandute/>
+        <nume>J1Nike100045200120</nume>
+        <producator/>
+        <pret/>
+        <marime/>
+        <exinitiale/>
+        <exvandute/>
+    </incaltaminte>
+    <incaltaminte>
+        <numemagazin>Sizzer</numemagazin>
+        <nume>DunkNike60040100400</nume>
+        <producator/>
+        <pret/>
+        <marime/>
+        <exinitiale/>
+        <exvandute/>
+        <nume>DunkNike60042300220</nume>
+        <producator/>
+        <pret/>
+        <marime/>
+        <exinitiale/>
+        <exvandute/>
+        <nume>DunkNike6004310050</nume>
+        <producator/>
+        <pret/>
+        <marime/>
+        <exinitiale/>
+        <exvandute/>
+        <nume>DunkNike60045200120</nume>
+        <producator/>
+        <pret/>
+        <marime/>
+        <exinitiale/>
+        <exvandute/>
+    </incaltaminte>
+    <incaltaminte>
+        <numemagazin>Tike</numemagazin>
+        <nume>yeezyAdidas90043134130</nume>
+        <producator/>
+        <pret/>
+        <marime/>
+        <exinitiale/>
+        <exvandute/>
+        <nume>yeezyAdidas90044120110</nume>
+        <producator/>
+        <pret/>
+        <marime/>
+        <exinitiale/>
+        <exvandute/>
+        <nume>yeezyAdidas90045105100</nume>
+        <producator/>
+        <pret/>
+        <marime/>
+        <exinitiale/>
+        <exvandute/>
+    </incaltaminte>
+</incaltamintes>
